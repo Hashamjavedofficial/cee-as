@@ -24,7 +24,7 @@ function candyStore(candies, n, k) {
   };
 }
 
-const candies = [3, 2, 1, 4];
+const candies = [3, 2, 1, 4, 5, 8];
 const n = candies.length;
 const k = 2;
 const result = candyStore(candies, n, k);
