@@ -17,3 +17,17 @@ function findMaximum(candies, n, k) {
   }
   return res;
 }
+function candyStore(candies, n, k) {
+  return {
+    minimunAmount: findMinimum(candies.sort(), n, k),
+    maximumAmount: findMaximum(candies.sort(), n, k),
+  };
+}
+
+const candies = [3, 2, 1, 4];
+const n = candies.length;
+const k = 2;
+const result = candyStore(candies, n, k);
+console.log(
+  `The maximum amount ${result.minimunAmount} and maximum amount is ${result.maximumAmount}`
+);
